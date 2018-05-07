@@ -1,0 +1,55 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #000;
+}
+div {
+	box-sizing: border-box;
+}
+.hidden{
+	display:none;
+}
+#videoIcon {
+	position: absolute; 
+	left: 50%; 
+	top: 20px;
+}
+#popup {
+	position:absolute;
+	left: -35%;
+	top: 0;
+	width: 35%;
+	height: 720px;
+	max-height: 720px;
+	background-color:rgba(255, 255, 255, 0.3);
+	transition: left 0.3s linear;
+	padding: 5%;
+	box-sizing: border-box;
+}
+#popup.show {
+	left: 0;
+}
+#popup #popupContent {
+	background-color: white;
+	width: 100%;
+	margin-top: 10%;
+	height: 80%;
+	color: #ca0000;
+	font-size: 30px;
+	padding: 130px 30px;
+}
+#closeIcon {
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	width: 30px;
+	height: 70px;
+	cursor: pointer;
+}
+#presentIconBlock {
+	text-align: center;
+	width: 100%;
+}
+#presentIcon {
+	height: 10%;
+}

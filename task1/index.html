@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<link href="style.css" rel="stylesheet" id="bootstrap-css">
+
+		<script src="jsonData.json"></script>
+		<script src="script.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="col-md-2 sidebar">
+			<div class="navBlock">
+				<div>
+					<img src="logos.jpg" />
+					<nav class="nav-sidebar">
+						<ul class="nav tabs">
+						  <li class="active"><a href="#tab1" data-toggle="tab">О компании</a></li>
+						  <li><a href="#tab2" data-toggle="tab">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			Задайте нам вопрос
+			<form action="/" method="POST" class="questionForm">
+				<input type="text" placeholder="Ваше имя" required />
+				<input type="tel" placeholder="Контактный телефон" />
+				<input type="email" placeholder="E-Mail" required />
+				<textarea placeholder="Ваш вопрос" required ></textarea>
+				<input type="submit" value="Спросить" />
+			</form>
+		</div>
+
+		<div class="tab-content">
+			<div class="tab-pane active container-fluid aboutBlock" id="tab1">
+
+				<div class="col-md-2 "></div>
+				<div class="col-md-10 text-center"><h1>МЫ БУДЕМ ПОЛЕЗНЫ</h1></div><br />
+				
+				<div class="row">
+					<div class="col-md-2 "></div>
+					<!-- -------------------- -->
+					<div class="col-md-1 "></div>
+					<div class="col-md-2 text-center">
+					  <img src="" class="thumbnailImg">
+					  <h4 class="titleName"></h4>
+					  <p class="desc"></p>
+					</div>
+					<div class="col-md-1 "></div>
+					<div class="col-md-2 text-center">
+					  <img src="" class="thumbnailImg">
+					  <h4 class="titleName"></h4>
+					  <p class="desc"></p>
+					</div>
+					<div class="col-md-1 "></div>
+					<div class="col-md-2 text-center">
+					  <img src="" class="thumbnailImg">
+					  <h4 class="titleName"></h4>
+					  <p class="desc"></p>
+					</div>
+					<div class="col-md-1 "></div>
+				</div>
+			</div>
+
+			<div class="tab-pane " id="tab2">
+
+			</div>
+		</div>
+	</body>
+</html>
